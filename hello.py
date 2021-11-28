@@ -8,7 +8,7 @@ def foo_bar2():
 
     Lorum Ipsum
     """
-    return "bar"
+    return "bar" + "baz"
 
 
 def bar3(id):
