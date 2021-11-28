@@ -11,6 +11,8 @@ attributes:
 links:
   - name: author
     type: author
+  - name: tags
+    type: tags
 ---
 name: author
 plural: authors
@@ -18,6 +20,17 @@ attributes:
   - name: id
     type: int
   - name: name
+    type: string
+links:
+  - name: posts
+    type: posts
+---
+name: tag
+plural: tags
+attributes:
+  - name: id
+    type: int
+  - name: label
     type: string
 links:
   - name: posts
