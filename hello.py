@@ -8,12 +8,8 @@ def foo_bar2():
 
     Lorum Ipsum
     """
-<<<<<<< HEAD
     return "bar"
-=======
-    raise NotImplementedError()
 
 
 def bar3(id):
     return f"{id}"
->>>>>>> appleseed
