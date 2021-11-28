@@ -13,10 +13,13 @@ class PostRepo:
         self.conn = conn
 
     def get(self, id : int) -> Post:
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def upsert(self, *posts : list[Posts]) -> list[Posts]:
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def find(self) -> list[Posts]:
-        raise NotImplemented()
+        raise NotImplementedError()
+
+    def delete(self, id : int) -> Post:
+        reaise NotImplementedError()
