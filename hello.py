@@ -3,7 +3,7 @@ import os
 print("Goodbye, World!!!!!")
 
 
-def foo_bar1():
+def foo_bar2():
     """This is a sample fuction.
 
     Lorum Ipsum
