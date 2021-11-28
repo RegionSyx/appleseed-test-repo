@@ -3,5 +3,5 @@ import os
 print("Goodbye, World!!!!!")
 
 
-def foo():
+def foo_bar():
     return "bar"
