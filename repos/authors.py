@@ -21,4 +21,4 @@ class AuthorRepo:
         raise NotImplementedError()
 
     def delete(self, id : int) -> Author:
-        reaise NotImplementedError()
+        raise NotImplementedError()
