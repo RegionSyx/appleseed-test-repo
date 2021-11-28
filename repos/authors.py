@@ -8,11 +8,10 @@ class Author:
 
 
 class AuthorRepo:
-
     def __init__(self, conn):
         self.conn = conn
 
-    def get(self, id : int) -> Author:
+    def get(self, id: int) -> Author:
         raise NotImplementedError()
 
     def upsert(self, *authors : list[Authors]) -> list[Authors]:
@@ -21,5 +20,5 @@ class AuthorRepo:
     def find(self) -> list[Authors]:
         raise NotImplementedError()
 
-    def delete(self, id : int) -> Author:
+    def delete(self, id: int) -> Author:
         raise NotImplementedError()

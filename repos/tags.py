@@ -8,11 +8,10 @@ class Tag:
 
 
 class TagRepo:
-
     def __init__(self, conn):
         self.conn = conn
 
-    def get(self, id : int) -> Tag:
+    def get(self, id: int) -> Tag:
         raise NotImplementedError()
 
     def upsert(self, *tags : list[Tags]) -> list[Tags]:
@@ -21,5 +20,5 @@ class TagRepo:
     def find(self) -> list[Tags]:
         raise NotImplementedError()
 
-    def delete(self, id : int) -> Tag:
+    def delete(self, id: int) -> Tag:
         raise NotImplementedError()
