@@ -12,10 +12,13 @@ class AuthorRepo:
         self.conn = conn
 
     def get(self, id : int) -> Author:
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def upsert(self, *authors : list[Authors]) -> list[Authors]:
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def find(self) -> list[Authors]:
-        raise NotImplemented()
+        raise NotImplementedError()
+
+    def delete(self, id : int) -> Author:
+        reaise NotImplementedError()
