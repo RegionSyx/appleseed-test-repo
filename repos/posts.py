@@ -22,4 +22,4 @@ class PostRepo:
         raise NotImplementedError()
 
     def delete(self, id : int) -> Post:
-        reaise NotImplementedError()
+        raise NotImplementedError()
