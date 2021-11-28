@@ -1,0 +1,24 @@
+---
+name: post
+plural: posts
+attributes:
+  - name: id
+    type: int
+  - name: title
+    type: string
+  - name: body
+    type: string
+links:
+  - name: author
+    type: author
+---
+name: author
+plural: authors
+attributes:
+  - name: id
+    type: int
+  - name: name
+    type: string
+links:
+  - name: posts
+    type: posts
