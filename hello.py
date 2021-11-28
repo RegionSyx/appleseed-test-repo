@@ -12,8 +12,4 @@ def foo_bar2():
 
 
 def bar3(id):
-<<<<<<< HEAD
-    return f"{id}"
-=======
     return f"{id}!!!!"
->>>>>>> appleseed
