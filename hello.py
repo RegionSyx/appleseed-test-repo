@@ -1,5 +1,7 @@
 import os
 
-
 print("Goodbye, World!!!!!")
-print('second hello')
+
+
+def foo():
+    raise NotImplementedError()
