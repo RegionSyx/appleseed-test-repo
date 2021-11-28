@@ -9,3 +9,7 @@ def foo_bar2():
     Lorum Ipsum
     """
     raise NotImplementedError()
+
+
+def bar3(id):
+    return f"{id}"
