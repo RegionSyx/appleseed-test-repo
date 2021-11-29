@@ -1,10 +1,12 @@
 from dataclasses import dataclass
+from datetime import datetime
 
 
 @dataclass
 class Author:
-    id: int
-    name: string
+    id: Optional[int]
+    name: Optional[string]created_at: Optional[datetime]
+    updated_at: Optional[datetime]
 
 
 class AuthorRepo:
