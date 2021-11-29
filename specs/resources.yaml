@@ -2,8 +2,8 @@
 name: post
 plural: posts
 identifier:
-  - name: id
-    type: int
+  name: id
+  type: int
 attributes:
   - name: title
     type: string
@@ -38,8 +38,8 @@ links:
 name: tag
 plural: tags
 identifier:
-  - name: id
-    type: int
+  name: id
+  type: int
 attributes:
   - name: label
     type: string
