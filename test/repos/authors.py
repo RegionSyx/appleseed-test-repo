@@ -6,7 +6,6 @@ from datetime import datetime
 @dataclass
 class Author:
     name: Optional[string]
-    None: Optional[]
     created_at: Optional[datetime]
     updated_at: Optional[datetime]
 
