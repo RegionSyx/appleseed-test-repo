@@ -11,7 +11,6 @@ posts = sa.Table(
     updated_at=sa.DateTime(),
 )
 
-
 authors = sa.Table(
     metadata, 
     id=sa.Integer(primary_key=True),
@@ -21,7 +20,6 @@ authors = sa.Table(
     updated_at=sa.DateTime(),
 )
 
-
 tags = sa.Table(
     metadata, 
     id=sa.Integer(primary_key=True),
@@ -29,5 +27,4 @@ tags = sa.Table(
     created_at=sa.DateTime(),
     updated_at=sa.DateTime(),
 )
-
 
