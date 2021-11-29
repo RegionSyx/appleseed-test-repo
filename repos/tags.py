@@ -17,7 +17,7 @@ class TagRepo:
     def get(self, id: int) -> Tag:
         raise NotImplementedError()
 
-    def upsert(self, *tags : list[Tags]) -> list[Tags]:
+    def upsert(self, *tags: list[Tags]) -> list[Tags]:
         raise NotImplementedError()
 
     def find(self) -> list[Tags]:
