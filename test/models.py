@@ -3,7 +3,7 @@ import sqlalchemy as sa
 
 
 posts = sa.Table(metadata, 
-    =,
+    id=sa.Integer(primary_key=True),
     
     title=sa.Text(),
     
@@ -27,7 +27,7 @@ authors = sa.Table(metadata,
 
 
 tags = sa.Table(metadata, 
-    =,
+    id=sa.Integer(primary_key=True),
     
     label=sa.Text(),
     created_at=sa.DateTime(),
