@@ -5,7 +5,6 @@ from datetime import datetime
 
 @dataclass
 class Tag:
-    id: Optional[int]
     label: Optional[string]
     created_at: Optional[datetime]
     updated_at: Optional[datetime]
@@ -15,7 +14,7 @@ class TagRepo:
     def __init__(self, conn):
         self.conn = conn
 
-    def get(self, id: int) -> Tag:
+    def get(self, : ) -> Tag:
         raise NotImplementedError()
 
     def upsert(self, *tags: list[Tags]) -> list[Tags]:
@@ -24,5 +23,5 @@ class TagRepo:
     def find(self) -> list[Tags]:
         raise NotImplementedError()
 
-    def delete(self, id: int) -> Tag:
+    def delete(self, : ) -> Tag:
         raise NotImplementedError()
