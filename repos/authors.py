@@ -17,7 +17,7 @@ class AuthorRepo:
     def get(self, id: int) -> Author:
         raise NotImplementedError()
 
-    def upsert(self, *authors : list[Authors]) -> list[Authors]:
+    def upsert(self, *authors: list[Authors]) -> list[Authors]:
         raise NotImplementedError()
 
     def find(self) -> list[Authors]:

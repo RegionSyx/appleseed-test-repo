@@ -18,7 +18,7 @@ class PostRepo:
     def get(self, id: int) -> Post:
         raise NotImplementedError()
 
-    def upsert(self, *posts : list[Posts]) -> list[Posts]:
+    def upsert(self, *posts: list[Posts]) -> list[Posts]:
         raise NotImplementedError()
 
     def find(self) -> list[Posts]:
