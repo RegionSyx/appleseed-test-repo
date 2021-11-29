@@ -1,13 +1,18 @@
 ---
 name: post
 plural: posts
-attributes:
+identifier:
   - name: id
     type: int
+attributes:
   - name: title
     type: string
+    examples:
+      - My Blog Post
   - name: body
     type: string
+    examples:
+      - This is an example blog post
 links:
   - name: author
     type: author
@@ -16,22 +21,32 @@ links:
 ---
 name: author
 plural: authors
+identifier:
+  name: id
+  type: int
 attributes:
-  - name: id
-    type: int
   - name: name
     type: string
+    description: Full name of the author
+    examples:
+      - Johnny Appleseed
+  - name: 
 links:
   - name: posts
     type: posts
 ---
 name: tag
 plural: tags
-attributes:
+identifier:
   - name: id
     type: int
+attributes:
   - name: label
     type: string
+    examples:
+      - dev
+      - draft
+    pattern: /[a-zA-Z0-9]
 links:
   - name: posts
     type: posts
