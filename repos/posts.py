@@ -6,7 +6,8 @@ from datetime import datetime
 class Post:
     id: Optional[int]
     title: Optional[string]
-    body: Optional[string]created_at: Optional[datetime]
+    body: Optional[string]
+    created_at: Optional[datetime]
     updated_at: Optional[datetime]
 
 
