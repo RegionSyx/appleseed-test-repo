@@ -1,5 +1,5 @@
 {
-  "command": "/usr/local/bin/appleseed apply --package-name test",
+  "command": "/usr/local/bin/appleseed apply --resources-path ./specs/resources.yaml",
   "package_name": "test",
-  "resources_path": "resources.yaml"
+  "resources_path": "./specs/resources.yaml"
 }
