@@ -1,6 +1,7 @@
 ---
 name: post
 plural: posts
+description: A post for users to see
 identifier:
   name: id
   type: int
