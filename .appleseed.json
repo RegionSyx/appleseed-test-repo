@@ -1,0 +1,73 @@
+{
+  "command": "/usr/local/bin/appleseed apply repos resources.yaml",
+  "resources": [
+    {
+      "attributes": [
+        {
+          "name": "id",
+          "type": "int"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "type": "string"
+        }
+      ],
+      "links": [
+        {
+          "name": "author",
+          "type": "author"
+        },
+        {
+          "name": "tags",
+          "type": "tags"
+        }
+      ],
+      "name": "post",
+      "plural": "posts"
+    },
+    {
+      "attributes": [
+        {
+          "name": "id",
+          "type": "int"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "links": [
+        {
+          "name": "posts",
+          "type": "posts"
+        }
+      ],
+      "name": "author",
+      "plural": "authors"
+    },
+    {
+      "attributes": [
+        {
+          "name": "id",
+          "type": "int"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        }
+      ],
+      "links": [
+        {
+          "name": "posts",
+          "type": "posts"
+        }
+      ],
+      "name": "tag",
+      "plural": "tags"
+    }
+  ]
+}
