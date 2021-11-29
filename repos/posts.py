@@ -1,11 +1,13 @@
 from dataclasses import dataclass
+from datetime import datetime
 
 
 @dataclass
 class Post:
-    id: int
-    title: string
-    body: string
+    id: Optional[int]
+    title: Optional[string]
+    body: Optional[string]created_at: Optional[datetime]
+    updated_at: Optional[datetime]
 
 
 class PostRepo:
