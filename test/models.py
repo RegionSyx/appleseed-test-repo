@@ -8,6 +8,7 @@ authors = sa.Table(
     name=sa.Text(),
     created_at=sa.DateTime(),
     updated_at=sa.DateTime(),
+    archived_at=sa.DateTime(nullable=True),
 )
 
 posts = sa.Table(
@@ -17,6 +18,7 @@ posts = sa.Table(
     body=sa.Text(),
     created_at=sa.DateTime(),
     updated_at=sa.DateTime(),
+    archived_at=sa.DateTime(nullable=True),
 )
 
 tags = sa.Table(
@@ -25,4 +27,5 @@ tags = sa.Table(
     label=sa.Text(),
     created_at=sa.DateTime(),
     updated_at=sa.DateTime(),
+    archived_at=sa.DateTime(nullable=True),
 )
