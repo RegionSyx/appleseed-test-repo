@@ -13,7 +13,7 @@ posts = sa.Table(metadata,
 
 
 authors = sa.Table(metadata,
-    id=sa.Integer(),
+    id=sa.Integer(primary_key=True),
     name=sa.Text(),
     created_at=sa.DateTime(),
     updated_at=sa.DateTime(),
