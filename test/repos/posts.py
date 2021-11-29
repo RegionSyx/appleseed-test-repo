@@ -5,7 +5,6 @@ from datetime import datetime
 
 @dataclass
 class Post:
-    id: Optional[int]
     title: Optional[string]
     body: Optional[string]
     created_at: Optional[datetime]
@@ -16,7 +15,7 @@ class PostRepo:
     def __init__(self, conn):
         self.conn = conn
 
-    def get(self, id: int) -> Post:
+    def get(self, : ) -> Post:
         raise NotImplementedError()
 
     def upsert(self, *posts: list[Posts]) -> list[Posts]:
@@ -25,5 +24,5 @@ class PostRepo:
     def find(self) -> list[Posts]:
         raise NotImplementedError()
 
-    def delete(self, id: int) -> Post:
+    def delete(self, : ) -> Post:
         raise NotImplementedError()
