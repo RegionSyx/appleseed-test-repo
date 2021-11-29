@@ -1,4 +1,4 @@
 {
-  "command": "/usr/local/bin/appleseed apply repos --resources-path resources.yaml",
+  "command": "/usr/local/bin/appleseed apply repos",
   "resources_path": "resources.yaml"
 }
