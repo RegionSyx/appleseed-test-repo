@@ -22,7 +22,7 @@ class PostRepo:
         raise NotImplementedError()
 
     def find(self) -> list[Posts]:
-        return ["example"]
+        return ["example2"]
 
     def delete(self, id: int) -> Post:
         raise NotImplementedError()

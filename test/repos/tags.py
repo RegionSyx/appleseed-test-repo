@@ -21,7 +21,7 @@ class TagRepo:
         raise NotImplementedError()
 
     def find(self) -> list[Tags]:
-        return ["example"]
+        return ["example2"]
 
     def delete(self, id: int) -> Tag:
         raise NotImplementedError()
