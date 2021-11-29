@@ -25,3 +25,6 @@ class TagRepo:
 
     def delete(self, id: int) -> Tag:
         raise NotImplementedError()
+
+    def archive(self, id: int) -> Tag:
+        raise NotImplementedError()

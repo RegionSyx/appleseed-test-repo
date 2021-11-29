@@ -26,3 +26,6 @@ class PostRepo:
 
     def delete(self, id: int) -> Post:
         raise NotImplementedError()
+
+    def archive(self, id: int) -> Post:
+        raise NotImplementedError()
