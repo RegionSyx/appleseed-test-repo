@@ -25,3 +25,6 @@ class AuthorRepo:
 
     def delete(self, id: int) -> Author:
         raise NotImplementedError()
+
+    def archive(self, id: int) -> Author:
+        raise NotImplementedError()
