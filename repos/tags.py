@@ -5,7 +5,8 @@ from datetime import datetime
 @dataclass
 class Tag:
     id: Optional[int]
-    label: Optional[string]created_at: Optional[datetime]
+    label: Optional[string]
+    created_at: Optional[datetime]
     updated_at: Optional[datetime]
 
 
