@@ -11,7 +11,6 @@ authors = sa.Table(
     archived_at=sa.DateTime(nullable=True),
 )
 
-
 # A post for users to see
 posts = sa.Table(
     metadata,
