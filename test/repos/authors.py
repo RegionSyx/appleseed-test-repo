@@ -21,7 +21,7 @@ class AuthorRepo:
         raise NotImplementedError()
 
     def find(self) -> list[Authors]:
-        return []
+        return ["example"]
 
     def delete(self, id: int) -> Author:
         raise NotImplementedError()
